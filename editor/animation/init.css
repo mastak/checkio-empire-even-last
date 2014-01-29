@@ -67,7 +67,7 @@
 
 .tryit-content {
     background-color: #dfe8f7;
-    font-family: verdana;
+    font-family: Verdana, Arial, sans-serif;
 }
 
 .tryit-content .tool td{
@@ -91,7 +91,7 @@
 .tryit-content .btn {
     padding: 4px 6px;
     font-size: 14px;
-    font-family: Verdana;
+    font-family: Verdana, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.428571429;
     text-align: center;
@@ -101,6 +101,7 @@
     border: 1px solid transparent;
     border-radius: 4px;
     background-color: #8FC7ED;
+    width: 100px;
 }
 
 .tryit-content .btn:focus {
@@ -137,6 +138,8 @@ fieldset[disabled] .btn {
 .tryit-content input[type="number"]
 {
     display: inline-block;
+    width: 300px;
+    text-align: center;
     padding: 4px 6px;
     font-size: 14px;
     line-height: 1.428571429;
@@ -164,6 +167,7 @@ fieldset[disabled] .btn {
 .tryit-content input[type="number"][readonly]{
     cursor: not-allowed;
     background-color: #eeeeee;
+
 }
 
 /* Your CSS */
