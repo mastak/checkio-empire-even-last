@@ -77,7 +77,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            $content.find('.explanation').html(JSON.stringify(explanation));
+            $content.find('.explanation').html(explanation);
 
 
             this_e.setAnimationHeight($content.height() + 60);
