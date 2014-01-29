@@ -1,29 +1,37 @@
 <p>
-    <i>( Describe task in general )</i>
+    You are given an array of integers. You should find the sum of elements with even indexes (0th, 2nd, 4th...) and
+    multiply this number at the last element of the array.
 </p>
 
 <p>
-    Sum two passed ints
+    For an empty array the result is 0 (zero).
 </p>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.png" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.png" alt="example" width="380px"/>
-</p>
-
-<p><i>( Explain input and output values )</i></p>
-<p>
-    <strong>Input: </strong> Two arguments. Both are int
-</p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Hints: </strong> This task can be solved with
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/introduction.html#lists">Lists indexes</a>,
+    <a href="http://docs.python.org/2/tutorial/introduction.html#strings">Slices</a> and
+    <a href="http://docs.python.org/2/tutorial/introduction.html#strings">Built-in function "sum"</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/introduction.html#lists">Lists indexes</a>,
+    <a href="http://docs.python.org/3/tutorial/introduction.html#strings">Slices</a> and
+    <a href="http://docs.python.org/3/tutorial/introduction.html#strings">Built-in function "sum"</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Input: </strong> A list of integers.
+</p>
+
+<p>
+    <strong>Output: </strong> The number, as an integer.
 </p>
 
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
@@ -35,5 +43,5 @@ checkio(5, 7) == 12
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    There is you will learn how to use indexes and slices.
 </p>
