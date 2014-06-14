@@ -1,0 +1,69 @@
+<img class="for_info_only" title="slice" src="{{MEDIA}}slice.png" alt="slice"
+     style="width: 300px;float: right; margin-top: 30px; "/>
+
+
+<p>
+    Adott egy egész számokból álló tömb. Meg kell találni a tömb páros (a 0-ik, a 2-ik, 
+    a 4-ik, stb.) pozícióiban álló elemeinek az összegét, majd megszorozni ezt az 
+    összeget a tömb legutolsó elemére. Ne feledje, hogy a tömb első elemének indexe 0!
+</p>
+
+<p>
+    Az üres tömb számára az eredmény mindig 0 (nulla).
+</p>
+
+
+<p>
+    <strong>Megjegyzések: </strong> könnyen megoldható ez a feladat a következőkkel:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/introduction.html#lists">a tömbök indexei</a>,
+    <a href="http://docs.python.org/2/tutorial/introduction.html#strings">tömbszeletek</a> és
+    <a href="http://docs.python.org/2/library/functions.html#sum">a „sum” beépített függvény</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/introduction.html#lists">a tömbök indexei</a>,
+    <a href="http://docs.python.org/3/tutorial/introduction.html#strings">tömbszeletek</a> és
+    <a href="http://docs.python.org/3/library/functions.html#sum">a „sum” beépített függvény</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Bemeneti adatok: </strong> egy egész számokból (int) álló lista (list).
+</p>
+
+<p>
+    <strong>Kimeneti adatok: </strong> egy egész szám (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Példák:</strong>
+    </p>
+    <pre class="brush: python">
+checkio([0, 1, 2, 3, 4, 5]) == 30
+checkio([1, 3, 5]) == 30
+checkio([6]) == 36
+checkio([]) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Alkalmazása: </strong>
+    Az indexek és a tömbszeletek a programozás nagyon fontos részei mind a Pythonon, mind 
+    más programozási nyelveken. A továbbiakban jó hasznát lehet venni ezeknek.
+</p>
+
+<p>
+    <strong>Előfeltételek: </strong>
+    0 &le; len(array) &le; 20<br>
+    all(isinstance(x, int) for x in array)<br>
+    all(-100 &lt; x &lt; 100 for x in array)<br>
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        A CheckIO nem csak feladatok megoldására alkalmas, hanem tapasztalatcsere is. Oldja 
+        meg feladatokat, ellenőrizze a többiek megoldásait, publikálja a saját megoldását 
+        és várja a visszajelzéseket!
+    </p>
+</div>
