@@ -1,0 +1,70 @@
+﻿<img class="for_info_only" title="slice" src="{{MEDIA}}slice.png" alt="slice"
+     style="width: 300px;float: right; margin-top: 30px; "/>
+
+
+<p>
+	あなたは整数の配列が与えられます。
+	あなたはインデックスが偶数(0番目、2番目、4番目…)である要素の和を求めてから、この和と配列の最後の要素を掛けなければいけません。
+	最初の要素のインデックスが0であることを忘れてはいけません。
+</p>
+
+<p>
+	空の配列については、結果は常に0(ゼロ)になるでしょう。
+</p>
+
+
+<p>
+    <strong>ヒント: </strong> このタスクは以下を使って解くことができます。
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.jp/2/tutorial/introduction.html#lists">リスト インデックス</a>,
+    <a href="http://docs.python.jp/2/tutorial/introduction.html#strings">スライス</a>,
+    <a href="http://docs.python.jp/2/library/functions.html#sum"> 組み込み関数 "sum"</a>。
+    {% else %}
+    <a href="http://docs.python.jp/3/tutorial/introduction.html#lists">リスト インデックス</a>,
+    <a href="http://docs.python.jp/3/tutorial/introduction.html#strings">スライス</a>,
+    <a href="http://docs.python.jp/3/library/functions.html#sum"> 組み込み関数 "sum"</a>。
+    {% endif %}
+</p>
+
+<p>
+    <strong>入力: </strong> 整数のリスト
+</p>
+
+<p>
+    <strong>出力: </strong> 結果の数値、整数
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+    <pre class="brush: python">
+checkio([0, 1, 2, 3, 4, 5]) == 30
+checkio([1, 3, 5]) == 30
+checkio([6]) == 36
+checkio([]) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+	インデックスとスライスはPythonと他の言語で重要な要素です。
+	これは今後役に立つことでしょう!
+	<!-- in handy:役に立つ down the road:将来いつか、今後、そのうちに、やがて -->
+</p>
+
+<p>
+    <strong>事前条件: </strong>
+    0 &le; len(array) &le; 20<br>
+    all(isinstance(x, int) for x in array)<br>
+    all(-100 &lt; x &lt; 100 for x in array)<br>
+</p>
+
+
+<div class="facts for_info_only">
+    <p>
+		CheckiOはミッションを解くだけではありません。経験を交換します。
+		パズルを解いて、仲間のプレイヤーの解答をチェックし、独自の解答を公表し、仲間が公表した解答にフィードバックを与えます。
+    </p>
+</div>
