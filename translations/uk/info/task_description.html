@@ -1,0 +1,64 @@
+<img class="for_info_only" title="slice" src="{{MEDIA}}slice.png" alt="slice"
+     style="width: 300px;float: right; margin-top: 30px; "/>
+
+
+<p>
+    Заданий масив цілих чисел. Потрібно знайти суму елементів з парними індексами 
+    (0-й, 2-й, 4-й і т.д.), а потім перемножити цю суму і останній елемент вихідного 
+    масиву. Не забудьте, що перший елемент масиву має індекс 0.
+</p>
+
+<p>
+    <strong>Зауваження: </strong> Ви легко розв’яжете це завдання за допомогою:
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/introduction.html#lists">індексів масивів</a>,
+    <a href="http://docs.python.org/2/tutorial/introduction.html#strings">зрізів</a> і
+    <a href="http://docs.python.org/2/library/functions.html#sum">вбудованої функції  "sum"</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/introduction.html#lists">індексів масивів</a>,
+    <a href="http://docs.python.org/3/tutorial/introduction.html#strings">зрізів</a> і
+    <a href="http://docs.python.org/3/library/functions.html#sum">вбудованої функції  "sum"</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Вхідні дані: </strong> Список (list) цілих чисел (int).
+</p>
+
+<p>
+    <strong>Вихідні дані: </strong> Число, як ціле число (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Приклади:</strong>
+    </p>
+    <pre class="brush: python">
+checkio([0, 1, 2, 3, 4, 5]) == 30
+checkio([1, 3, 5]) == 30
+checkio([6]) == 36
+checkio([]) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Як це використовується: </strong>
+    Індекси і зрізи -  дуже важливі елементи програмування, як на Python, 
+    так і на інших мовах програмування. Це допоможе вам надалі.
+</p>
+
+<p>
+    <strong>Передумови: </strong>
+    0 &le; len(array) &le; 20<br>
+    all(isinstance(x, int) for x in array)<br>
+    all(-100 &lt; x &lt; 100 for x in array)<br>
+</p>
+
+<div class="facts for_info_only">
+    <p>
+        CheckiO - це не тільки розв’язання задач, але й обмін досвідом. 
+        Розв’язуйте головоломки, перевіряйте розв’язки інших гравців, 
+        публікуйте свій розв’язок і отримуйте відгуки.
+    </p>
+</div>
