@@ -16,11 +16,11 @@
     {% if "python 2" in interpreter|lower %}
     <a href="http://docs.python.org/2/tutorial/introduction.html#lists">les index de listes</a>,
     <a href="http://docs.python.org/2/tutorial/introduction.html#strings">les d&eacute;coupages</a> et
-    <a href="http://docs.python.org/2/library/functions.html#sum"> la fonction de base &quot;sum&quot;</a>.
+    <a href="http://docs.python.org/2/library/functions.html#sum"> la fonction primitive "sum"</a>.
     {% else %}
     <a href="http://docs.python.org/3/tutorial/introduction.html#lists">les index de listes</a>,
     <a href="http://docs.python.org/3/tutorial/introduction.html#strings">les d&eacute;coupages</a> et
-    <a href="http://docs.python.org/3/library/functions.html#sum"> la fonction de base &quot;sum&quot;</a>.
+    <a href="http://docs.python.org/3/library/functions.html#sum"> la fonction primitive "sum"</a>.
     {% endif %}
 </p>
 
@@ -54,9 +54,9 @@ checkio([]) == 0
 
 <p>
     <strong>Pr&eacute;condition : </strong>
-    0 &le; len(array) &le; 20<br>
-    all(isinstance(x, int) for x in array)<br>
-    all(-100 &lt; x &lt; 100 for x in array)<br>
+    0 &le; len(liste) &le; 20<br>
+    all(isinstance(x, int) for x in liste)<br>
+    all(-100 &lt; x &lt; 100 for x in liste)<br>
 
 
 <div class="facts for_info_only">
