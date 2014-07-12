@@ -1,0 +1,68 @@
+<img class="for_info_only" title="juggler" src="{{MEDIA}}calculator.png" alt="juggler" width="300px"
+        style="float: left; margin-top: -5px; "/>
+
+<p>
+    On vous donne une liste d'entiers. Vous devez trouver la somme des &eacute;l&eacute;ments avec des index pairs (0&egrave;me, 2&egrave;me, 4&egrave;me...)
+    et ensuite multiplier ce total par le dernier &eacute;l&eacute;ment de la liste.
+    N'oubliez pas que le premier &eacute;l&eacute;ment a un index de 0.
+</p>
+
+<p>
+    Pour une liste vide, le r&eacute;sultat sera toujours 0 (z&eacute;ro).
+</p>
+
+<p>
+    <strong>Conseils : </strong> Vous pouvez facilement r&eacute;soudre cette t&acirc;che avec :
+    {% if "python 2" in interpreter|lower %}
+    <a href="http://docs.python.org/2/tutorial/introduction.html#lists">les index de listes</a>,
+    <a href="http://docs.python.org/2/tutorial/introduction.html#strings">les d&eacute;coupages</a> et
+    <a href="http://docs.python.org/2/library/functions.html#sum"> la fonction primitive "sum"</a>.
+    {% else %}
+    <a href="http://docs.python.org/3/tutorial/introduction.html#lists">les index de listes</a>,
+    <a href="http://docs.python.org/3/tutorial/introduction.html#strings">les d&eacute;coupages</a> et
+    <a href="http://docs.python.org/3/library/functions.html#sum"> la fonction primitive "sum"</a>.
+    {% endif %}
+</p>
+
+<p>
+    <strong>Entr&eacute;e : </strong> Une liste d'entiers.
+</p>
+
+<p>
+    <strong>Sortie : </strong> Le nombre en tant qu'entier.
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Exemple : </strong>
+    </p>
+    <pre class="brush: python">
+checkio([0, 1, 2, 3, 4, 5]) == 30
+checkio([1, 3, 5]) == 30
+checkio([6]) == 36
+checkio([]) == 0
+    </pre>
+</div>
+
+<p class="for_info_only">
+    <strong>&Agrave; quoi cela sert : </strong>
+    Les index et les d&eacute;coupages sont d'importants &eacute;l&eacute;ments pour coder en python et dans d'autres langages.
+    Ils vont s'av&eacute;rer tr&egrave;s pratiques au fur et &agrave; mesure !
+</p>
+
+
+<p>
+    <strong>Pr&eacute;condition : </strong>
+    0 &le; len(liste) &le; 20<br>
+    all(isinstance(x, int) for x in liste)<br>
+    all(-100 &lt; x &lt; 100 for x in liste)<br>
+
+
+<div class="facts for_info_only">
+    <p>
+        Checkio ne consiste pas seulement &agrave; r&eacute;soudre des missions, mais aussi &agrave; &eacute;changer ses exp&eacute;riences.
+        R&eacute;solvez votre puzzle, v&eacute;rifiez les solutions des autres joueurs, publiez votre propre solution et
+        commentez les solutions publi&eacute;es par les autres membres !
+    </p>
+</p>
