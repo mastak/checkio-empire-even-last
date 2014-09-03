@@ -1,0 +1,80 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        You should know how to use
+        <a href="http://docs.python.org/2/tutorial/introduction.html#lists">list indexes</a>
+        for this mission.
+        You can get i-th element of an array by using array[i].
+
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        To iterate indexes you can use "range" and "len".
+        <pre class="brysh: python">
+for i in range(len(array)):
+    if not i % 2:
+        something
+</pre>
+or you can iterate only even indexes within a range:
+<pre class="brysh: python">
+for i in range(0, len(array), 2):
+    something
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am gone half way through. Need help!
+    </div>
+    <div class="answer">
+        To get the last element, just use negative indexes -- array[-1].
+        Don't forget about an empty array, because you will get IndexError,
+        so check before running.
+<pre class="brysh: python">
+if len(array) > 0:
+    blabla
+
+OR IN PYTHONIC
+
+if array:
+    blabla
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        You can solve this mission using
+        <a href="http://docs.python.org/2/tutorial/introduction.html#strings">slices</a> and
+        <a href="http://docs.python.org/2/library/functions.html#sum">the built-in function "sum"</a>.
+        Slices use three numbers - from, to and step. If you don't write any of them, then it uses the default.
+        So to get all even indexes element -- array[::2], this is short form by array[0:len(array):2]
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I tried all I could. Nothing works. SOS
+    </div>
+    <div class="answer">
+        If you don't want to use slices and sum, just accumulate the sum in a variable.
+<pre class="brysh: python">
+def checkio(array):
+    result = 0
+    for i in range(0, len(array), 2):
+        result += array[i]  # result = result + array[i]
+    </pre>
+
+    </div>
+</div>
+
+
+</body>
