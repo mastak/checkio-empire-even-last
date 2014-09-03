@@ -17,13 +17,13 @@
     </div>
     <div class="answer">
         To iterate indexes you can use "range" and "len".
-        <pre class="brysh: python">
+        <pre class="brush: python">
 for i in range(len(array)):
     if not i % 2:
         something
 </pre>
 or you can iterate only even indexes within a range:
-<pre class="brysh: python">
+<pre class="brush: python">
 for i in range(0, len(array), 2):
     something
 </pre>
@@ -37,7 +37,7 @@ for i in range(0, len(array), 2):
         To get the last element, just use negative indexes -- array[-1].
         Don't forget about an empty array, because you will get IndexError,
         so check before running.
-<pre class="brysh: python">
+<pre class="brush: python">
 if len(array) > 0:
     blabla
 
@@ -66,7 +66,7 @@ if array:
     </div>
     <div class="answer">
         If you don't want to use slices and sum, just accumulate the sum in a variable.
-<pre class="brysh: python">
+<pre class="brush: python">
 def checkio(array):
     result = 0
     for i in range(0, len(array), 2):
