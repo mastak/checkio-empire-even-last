@@ -1,4 +1,4 @@
 checkio-task-first-last
 =======================
 
-Checkio Task "First and Lat"
+Checkio Task "First and Last"
