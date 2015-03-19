@@ -1,0 +1,80 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        No tengo idea de como comenzar a resolver esta misión
+    </div>
+    <div class="answer">
+        Deberías saber como usar
+        <a href="http://docs.python.org/2/tutorial/introduction.html#lists">índices de listas</a>
+        para esta misión.
+        Puedes obtener el i-ésimo elemente de un arreglo usando array[i].
+
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Necesito alguna ayuda para proceder con la misión
+    </div>
+    <div class="answer">
+        Para iterar los índices puedes usar "range" y "len".
+        <pre class="brush: python">
+for i in range(len(array)):
+    if not i % 2:
+        something
+</pre>
+o puedes iterar sólo en los índices pares dentre de range:
+<pre class="brush: python">
+for i in range(0, len(array), 2):
+    something
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Voy a mitad de camino. Necesito ayuda!
+    </div>
+    <div class="answer">
+        Para obtener el último elemente, sólo tienes que usar índices negativos -- array[-1].
+        No te olvides de los arreglos vacios, porque obtendrás IndexError,
+        entonces revisa antes de ejecutarlo.
+<pre class="brush: python">
+if len(array) > 0:
+    blabla
+
+OR IN PYTHONIC
+
+if array:
+    blabla
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Estoy atascado. Necesito una pequeña pista.
+    </div>
+    <div class="answer">
+        Puedes resolver esta misión usando
+        <a href="http://docs.python.org/2/tutorial/introduction.html#strings">fragmentos</a> y
+        <a href="http://docs.python.org/2/library/functions.html#sum">la función incluida "sum"</a>.
+        Los fragmentos usan tres números - desde, hasta y paso. Si no escribes alguno de ellos, entonces usará el valor por omisión.
+        Así, para obtener todos los elementos de índices pares usa -- array[::2], esta es la forma corta de array[0:len(array):2]
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Intenté todo lo que pude. Nada funciona. SOS
+    </div>
+    <div class="answer">
+        Si no quieres usar fragmentos y sum. simplemente acumula la suma en una variable.
+<pre class="brush: python">
+def checkio(array):
+    result = 0
+    for i in range(0, len(array), 2):
+        result += array[i]  # result = result + array[i]
+    </pre>
+
+    </div>
+</div>
+
+
+</body>
