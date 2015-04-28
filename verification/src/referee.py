@@ -12,3 +12,11 @@ class Referee(RefereeBase):
     FUNCTION_NAMES = {
         "javascript": "evenLast"
     }
+
+    @gen.coroutine
+    def post_test(self, test, validator_result, category_name, test_number):
+        yield super().post_test(test, validator_result, category_name, test_number)
+        yield self.editor_client.send_post_test({
+            'test_id': test_number, 
+            'message': "Test passed"
+        })
